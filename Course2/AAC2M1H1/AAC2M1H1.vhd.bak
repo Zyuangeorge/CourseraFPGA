@@ -47,12 +47,8 @@ end FullAdd;
 
 architecture behavioral of FullAdd is
 begin
-    my_label: process(A, B, Cin)
-    begin
-        -- Sum calculation
-        Sum <= A xor B xor Cin;
-
-        -- Carry out calculation
-        Cout <= (A and B) or (B and Cin) or (A and Cin);
-    end process;
+	my_label: process(A,B,Cin)
+	begin
+		
+	end process;
 end behavioral;

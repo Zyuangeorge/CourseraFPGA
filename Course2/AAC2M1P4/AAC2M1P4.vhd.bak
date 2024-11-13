@@ -1,31 +1,31 @@
 --------------------------------------------------------------------------------
 --                                                                            --
---               Honors Assignment 1 Module 1 Course 2                   	  --
+--               Application Assignment 4 Module 1 Course 2                   --
 --                                                                            --
 --------------------------------------------------------------------------------
 --
--- 
--- @file AAC2M1H1solved.vhd
--- @brief Honors Assignment 1-001 Example code with errors to be found
+-- @file AAC2M1P4solved.vhd
+-- @brief Application Assignment 2-001 Majority Vote Code 
 -- @version: 1.0 
--- Date of current revision:  @date 2019-07-21  
+-- Date of current revision:  @date [2018-08-13]  
 -- Target FPGA: [Intel Altera MAX10] 
 -- Tools used: [Quartus Prime 16.1] for editing and synthesis 
 --             [Modeltech ModelSIM 10.4a Student Edition] for simulation 
 --             [Quartus Prime 16.1]  for place and route if applied
 --             
 --  Functional Description:  This file contains the VHDL which describes the 
---               FPGA implementation of a 1-bit full adder. The inputs are A, B
---		 and Cin which are single bits and outputs are Sum and Cout which
---		 are the Sum and Carry out. 
+--               FPGA implementation of a Majority Vote Circuit. The inputs are  
+--               signals A, B, C with one output Y that is true only if at  
+--               least 2 of the inputs are true.
+ 
 --  Hierarchy:  There is only one level in this simple design.
 --  
 --  Designed for: Coursera 
 --                
---  Designed by:  @author Sanju Prakash Kannioth
+--  Designed by:  @author Tim Scherr
 --                University of Colorado
---
---      Copyright (c) 2019 by Tim Scherr
+-- 
+--      Copyright (c) 2018 by Tim Scherr
 --
 -- Redistribution, modification or use of this software in source or binary
 -- forms is permitted as long as the files maintain this copyright. Users are
@@ -35,24 +35,12 @@
 ------------------------------------------------------------------------------
 -- 
 
+library ieee;                                	
+use ieee.std_logic_1164.all;           	
+                                             		
+entity Majority is port (                 	
+    A, B, C: in std_logic; 			
+    Y: out std_logic);            		
+end Majority;                   	
 
-library ieee;
-use ieee.std_logic_1164.all;
-
-entity FullAdd is port ( 
-A, B, Cin: in std_logic; 
-Sum, Cout: out std_logic 
-); 
-end FullAdd;
-
-architecture behavioral of FullAdd is
-begin
-    my_label: process(A, B, Cin)
-    begin
-        -- Sum calculation
-        Sum <= A xor B xor Cin;
-
-        -- Carry out calculation
-        Cout <= (A and B) or (B and Cin) or (A and Cin);
-    end process;
-end behavioral;
+architecture behavioral of Majority is

@@ -34,17 +34,33 @@
 ------------------------------------------------------------------------------
 -- 
 
+Library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
-library ieee;                           -- line 1
-use ieee.std_logic_1164.all;            -- line 2
-
-entity comparator2 is port (            -- line 4
-    A, B: in std_logic_vector(1 downto 0);  -- line 5
-    Equals: out std_logic               -- line 6
-);
-end comparator2;                        -- line 7
-
-architecture Behavioral of comparator2 is
+entity comparator2 is
+    -- size of each input
+  port (
+      A, B   : in std_logic_vector(1 downto 0);
+      greater, equals, less  : out std_logic;
+      greaterOrEq, notequal, lessOrEq  : out std_logic
+   );
+end comparator2 ; 
+ 
+architecture comparator2_architecture of comparator2 is
 begin
-    Equals <= '1' when (A = B) else '0'; -- line to compare A and B
-end Behavioral;
+greater <= '1' when (A > B)
+else '0';
+equals <= '1' when (A = B)
+else '0';
+less <= '1' when (A < B)
+else '0';
+greaterOrEq <= '1' when (A >= B)
+else '0';
+notequal <= '1' when (A /= B)
+else '0';
+lessOrEq <= '1' when (A <= B)
+else '0';              
+end comparator2_architecture; 
+    
