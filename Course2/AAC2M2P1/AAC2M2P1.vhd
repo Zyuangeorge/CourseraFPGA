@@ -42,4 +42,3 @@ begin
     TC <= '1' when (count = "1111" and CEP = '1' and CET = '1') else '0';
 
 end Behavioral;
-
