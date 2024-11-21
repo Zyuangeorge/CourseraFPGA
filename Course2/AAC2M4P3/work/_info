@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dG:/CourseraFPGA/Course2/AAC2M4P2
+vAAC2M4P3_tb
+!s110 1731953642
+!i10b 1
+!s100 `^iQmJW9nEAmY@Cl5>XZ?0
+I5^fcM4_DHj[i0fnZX`m:g3
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dG:/CourseraFPGA/Course2/AAC2M4P3
+w1573419626
+8G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3_tb.vp
+FG:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3_tb.vp
+L0 65
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1731953642.000000
+!s107 G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3_tb.vp|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3_tb.vp|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@a@a@c2@m4@p3_tb
+vFSM
+!s110 1731954057
+!i10b 1
+!s100 b]<hmj_9OYR^nIARbnD:J3
+Io<S6V?C]1>J2z5YmW2WcS2
+R0
+R1
+w1731954054
+8G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3.v
+FG:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1731954057.000000
+!s107 G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|G:/CourseraFPGA/Course2/AAC2M4P3/AAC2M4P3.v|
+!i113 1
+R3
+R4
+n@f@s@m
